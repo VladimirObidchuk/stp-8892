@@ -98,7 +98,7 @@ body {
   @include media(desktop) {
     background-size: contain;
   }
-  margin-bottom: 24px;
+  //   margin-bottom: 24px;
   @include media(desktop) {
     line-height: 1;
   }
@@ -106,5 +106,6 @@ body {
 @media (min-resolution: 192dpi) {
   .basic-title {
     background: url('./../img/title-bg/title_all@2x.png') center no-repeat;
+    background-size: contain;
   }
 }

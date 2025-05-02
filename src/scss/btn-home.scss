@@ -1,0 +1,31 @@
+.btn-home {
+  font-family: $_font_pop;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 8px 23px;
+  background-color: $_btn_color;
+  width: 176px;
+  height: 44px;
+  border: 1px solid $_btn_play_border_color;
+  box-shadow: 0 2px 0 0 $_btn_play_border_color;
+  border-radius: 20px;
+
+  .btn-home:active {
+    border: 1px solid $_btn_play_border_active_color;
+    box-shadow: 0 2px 0 0 $_btn_play_border_active_color;
+    background-color: $_btn_active_color;
+  }
+  @include media(desktop) {
+    .btn-home:hover {
+      border: 1px solid $_btn_play_border_color;
+      box-shadow: 0 2px 0 0 $_btn_play_border_color;
+      background-color: $_btn_hover_color;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.coocies-policy {
+  padding: 42px 0 0;
+  .container {
+    margin-bottom: 34px;
+    @include media(desktop) {
+      padding: 0 96px;
+    }
+  }
+}

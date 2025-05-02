@@ -2,74 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stp-8892/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Help the people of LostVille find hidden objects and rebuild their charming town! Explore detailed scenes, solve puzzles, and relax in this cozy adventure."
+    />
+    <meta
+      name="keywords"
+      content="hidden object game, puzzle adventure, town builder, cozy games, relaxing game, visual search, LostVille, casual game, found it game"
+    />
+    <meta name="author" content="LostVille Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fbjajizyvn.xyz" />
+    <meta
+      property="og:title"
+      content="LostVille: Find Hidden Objects – Search and Rebuild!"
+    />
+    <meta
+      property="og:description"
+      content="Explore beautiful scenes, find lost items, and help rebuild a charming small town in LostVille: Find Hidden Objects."
+    />
+    <meta property="og:image" content="https://fbjajizyvn.xyz/og-image.jpg" />
+    <meta property="og:url" content="https://fbjajizyvn.xyz" />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/public/favicon-16x16.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&family=Wendy+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lost Villa</title>
     
     <script type="module" crossorigin src="/stp-8892/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8892/assets/index-da433681.css">
+    <link rel="stylesheet" href="/stp-8892/assets/index-d355de91.css">
   </head>
   <body>
     <header class="header">
   <nav class="nav">
+    <a class="nav-logo" href="./index.html" aria-label="Site logo">
+      <img src="/stp-8892/assets/logo-0a66b568.png" alt="Lost Ville logo" width="60" height="60" />
+    </a>
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="/page-2.html" class="nav-link">Page 2</a>
+        <a class="nav-link" href="#home">Home</a>
       </li>
-
       <li class="nav-item">
-        <a href="/page-3.html" class="nav-link">Page 3</a>
+        <a class="nav-link" href="#game-desc">Game Description</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faq">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#reviews">Reviews</a>
       </li>
     </ul>
-    <button type="button" class="burger-btn" data-action="open">Open menu</button>
+    <button type="button" class="burger-btn" data-action="open">
+      Open menu
+    </button>
     <div class="burger-menu" data-visible="close">
-      <ul>
-        <li><a href="#">link-1</a></li>
-        <li><a href="#">link-2</a></li>
-        <li><a href="#">link-3</a></li>
-        <li><a href="#">link-4</a></li>
+      <ul class="mobile-list">
+        <li class="mobile-item">
+          <a class="nav-lin" href="#home">Home</a>
+        </li>
+        <li class="mobile-item">
+          <a class="nav-link" href="#game-desc">Game Description</a>
+        </li>
+        <li class="mobile-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="mobile-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+        <li class="mobile-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
       </ul>
       <button type="button" class="btn-close" data-action="close">close</button>
     </div>
   </nav>
 </header>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/stp-8892/assets/javascript-8dac5379.svg" alt="" />
-    </section>
 
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <footer class="footer">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a class="link" href="https://vitejs.dev/guide/" target="_blank" rel="noopener noreferrer">Get Started</a>
+    <div class="left-side">
+      <a class="footer-link">
+        <img src="/stp-8892/assets/logo-0a66b568.png" alt="Lost Ville logo" width="60" height="60" />
+      </a>
+    </div>
+    <div class="right-side">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="/src/privacy-policy.html" class="footer-link"
+            >Privacy Policy</a
+          >
         </li>
-        <li class="action">
-          <a class="link" href="https://github.com/vitejs/vite" target="_blank" rel="noopener noreferrer">View on
-            GitHub</a>
+        <li class="footer-item">
+          <a href="/src/team-conditions.html" class="footer-link"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-item">
+          <a href="/src/coocies-policy.html" class="footer-link"
+            >Cookies Policy</a
+          >
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img class="pic" src="/stp-8892/assets/vite-logo-51249ca9.png" alt="Vite logo" width="640" height="640" />
+      <p class="right-text">
+        All rights reserved fbjajizyvn.xyz
+        <span class="right-subtext">2025</span>
+      </p>
     </div>
   </div>
-</section>
+</footer>
+
 
     
   </body>

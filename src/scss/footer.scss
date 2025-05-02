@@ -1,0 +1,11 @@
+.footer {
+  background-color: $_bg_footer_color;
+  padding: 16px 0;
+  .container {
+    display: grid;
+    row-gap: 16px;
+  }
+  .left-side {
+    padding: 0;
+  }
+}

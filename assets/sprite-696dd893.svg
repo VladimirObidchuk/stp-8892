@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-burger" viewBox="0 0 49 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.765" d="M3.294 16h42.353M3.294 1.882h42.353M3.294 30.118h42.353"/>
+    <symbol id="icon-burger" viewBox="0 0 30 31" fill="none">
+      <path d="M3.75 15.5H26.25M3.75 8H26.25M3.75 23H26.25" stroke="#1B1918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="icon-btn-arrow" viewBox="0 0 20 20" fill="none">
       <path d="M12.5 15L7.5 10L12.5 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

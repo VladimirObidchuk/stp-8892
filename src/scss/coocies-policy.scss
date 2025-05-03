@@ -1,0 +1,126 @@
+.coocies-policy {
+  padding: 42px 0 0;
+  .container {
+    margin-bottom: 34px;
+    @include media(desktop) {
+      padding: 0 96px;
+    }
+  }
+  .coocies-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: $_font_pop;
+    color: $_police_color;
+  }
+  .title-block {
+    width: auto;
+    height: 79px;
+    text-align: center;
+    background: url('./../img/title-bg/group.png') center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    @include media(desktop) {
+      width: 518px;
+      height: 131px;
+      margin-bottom: 54px;
+    }
+  }
+  @media (min-resolution: 192dpi) {
+    .title-block {
+      background: url('./../img/title-bg/group@2x.png') center no-repeat;
+      background-size: cover;
+    }
+  }
+  .coocies-title {
+    font-family: $_font_wendy;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 21px 57px 36px;
+    text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
+      1px 1px 2px black;
+    @include media(desktop) {
+      padding: 36px 115px 59px;
+      font-size: 36px;
+      line-height: 1;
+    }
+  }
+  .coocies-block-1 {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .coocies-text,
+  .coocies-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @include media(desktop) {
+      font-size: 20px;
+    }
+  }
+  .coocies-subtext {
+    text-decoration: underline;
+  }
+  .coocies-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    @include media(desktop) {
+      font-size: 24px;
+      line-height: 1.08;
+    }
+  }
+  .coocies-block-3 .coocies-text {
+    margin-bottom: 16px;
+  }
+  .coocies-list {
+    padding-left: 20px;
+    @include media(desktop) {
+      padding-left: 22px;
+    }
+  }
+  .coocies-item {
+    list-style: disc;
+  }
+  .coocies-block-4 .coocies-text {
+    margin-bottom: 16px;
+  }
+  .coocies-block-4 .coocies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+  }
+  .coocies-block-4 .coocies-list li:nth-child(3n + 1) {
+    margin-left: 20px;
+  }
+
+  .coocies-block-4 .coocies-list .coocies-item:nth-child(3n + 2),
+  .coocies-block-4 .coocies-list .coocies-item:nth-child(3n + 3) {
+    list-style: none;
+    padding: 0;
+  }
+  .coocies-block-5 .coocies-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .coocies-block-5 .coocies-text {
+    margin-bottom: 16px;
+  }
+  .coocies-block-5 .coocies-list .coocies-item {
+    margin: 0;
+    text-decoration: underline;
+  }
+  .coocies-block-8 .coocies-text .coocies-link {
+    text-decoration: underline;
+  }
+}

@@ -6,6 +6,8 @@
 @import './reviews.scss';
 @import './footer.scss';
 @import './privacy-policy.scss';
+@import './coocies-policy.scss';
+@import './btn-home.scss';
 
 :root {
   font-family: Poppins, Roboto, Wendy One, sans-serif;
@@ -36,6 +38,6 @@ body {
   padding: 0 16px;
   @include media(desktop) {
     max-width: 1200px;
-    padding: 0 36px;
+    padding: 0 96px;
   }
 }

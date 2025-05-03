@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <img src="/img/logo.png" alt="Lost Ville logo" width="60" height="60" />
+        <img class="nav-logo-img" src="/img/logo.png" alt="Lost Ville logo" />
       </a>
       <ul class="nav-list">
         <li class="nav-item">
@@ -21,31 +21,68 @@
           <a class="nav-link" href="#reviews">Reviews</a>
         </li>
       </ul>
-      <button type="button" class="burger-btn" data-action="open">
-        Open menu
+      <button type="button" class="burger-btn" data-modal-open>
+
+        <svg class="burger-svg" width="25" height="18">
+          <use href="../img/svg/sprite.svg#icon-burger"></use>
+        </svg>
+
       </button>
-      <div class="burger-menu" data-visible="close">
-        <ul class="mobile-list">
-          <li class="mobile-item">
-            <a class="nav-lin" href="#home">Home</a>
-          </li>
-          <li class="mobile-item">
-            <a class="nav-link" href="#game-desc">Game Description</a>
-          </li>
-          <li class="mobile-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-          </li>
-          <li class="mobile-item">
-            <a class="nav-link" href="#faq">FAQ</a>
-          </li>
-          <li class="mobile-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
-          </li>
-        </ul>
-        <button type="button" class="btn-close" data-action="close">
-          close
-        </button>
+
+      <!-- Modal Window  -->
+
+      <div class="wrapper" data-modal>
+        <div class="modal">
+          <ul class="mobile-list">
+            <a class="mobile-logo" href="../index.html">
+              <img src="/img/logo.png" alt="Logo Home page Lost Ville" width="51" height="41" />
+            </a>
+            <li class="mobile-item">
+              <img src="../img/phone/ph-home.png" alt="Home Page" width="20" height="20">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="mobile-item">
+              <img src="../img/phone/ph-game-desc.png" alt="Game Description" width="20" height="20">
+              <a class="nav-link" href="#game-desc">Game Description</a>
+            </li>
+            <li class="mobile-item">
+              <img src="../img/phone/ph-gallery.png" alt="Gallery" width="20" height="20">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="mobile-item">
+              <img src="../img/phone/ph-faq.png" alt="FAQ" width="20" height="20">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="mobile-item">
+              <img src="../img/phone/ph-reviews.png" alt="Reviews" width="20" height="20">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+          <button type="button" class="btn-close" data-modal-close>
+            <img class="img-close" src="../img/close.png" alt="close button" width="30" height="30">
+            </svg>
+          </button>
+          <div class="confidens">
+            <ul class="conf-list">
+              <li class="conf-item">
+                <a href="/privacy-policy.html" class="conf-link">Privacy Policy</a>
+              </li>
+              <li class="conf-item">
+                <a href="/team-conditions.html" class="conf-link">Terms and Conditions</a>
+              </li>
+              <li class="conf-item">
+                <a href="/coocies-policy.html" class="conf-link">Cookies Policy</a>
+              </li>
+            </ul>
+            <p class="conf-text">
+              All rights reserved fbjajizyvn.xyz
+              <span class="conf-subtext">2025</span>
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </nav>
   </div>
 </header>

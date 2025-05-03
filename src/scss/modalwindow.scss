@@ -1,0 +1,105 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, visibility 250ms ease, transform 400ms ease;
+  z-index: 999;
+}
+
+[data-modal].is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fcfcfc;
+  transform: scale(0.9);
+  transition: transform 250ms ease;
+}
+
+[data-modal].is-open .modal {
+  transform: scale(1);
+}
+
+.mobile-logo {
+  display: inline-block;
+  width: 51px;
+  margin-bottom: 35px;
+}
+
+.mobile-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.btn-close {
+  align-self: baseline;
+  margin-left: auto;
+}
+// ? я хз що тут, хіба бекграунд міняти і робити бордер +-
+// .btn-close:hover,
+// .btn-close:focus {
+//   background-color: $_text_btn_hover_color;
+// }
+
+.confidens {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $_font_pop;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $_main_color;
+  margin-top: auto;
+
+  .conf-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 12px;
+  }
+  .conf-item {
+    position: relative;
+  }
+  .conf-item:not(:last-child)::after {
+    position: absolute;
+    content: '|';
+    right: -7px;
+    background-color: $_header_color;
+  }
+
+  .conf-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+  }
+  .conf-subtext {
+    position: relative;
+  }
+  .conf-subtext::before {
+    content: '|';
+    position: absolute;
+    left: -5px;
+    background-color: $_header_color;
+  }
+}

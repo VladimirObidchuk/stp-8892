@@ -1,4 +1,5 @@
 @import './header.scss';
+@import './modalwindow.scss';
 @import './hero.scss';
 @import './game-desc.scss';
 @import './faq.scss';
@@ -28,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #e4eef8;
 }
 .container {
   min-width: 320px;

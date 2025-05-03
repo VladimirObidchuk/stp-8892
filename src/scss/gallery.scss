@@ -1,0 +1,6 @@
+.gallery-block {
+  width: 182px;
+  @include media(desktop) {
+    width: 426px;
+  }
+}

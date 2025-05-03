@@ -13,40 +13,17 @@
     font-family: $_font_pop;
     color: $_police_color;
   }
-  .title-block {
-    width: auto;
-    height: 79px;
-    text-align: center;
-    background: url('./../img/title-bg/group.png') center no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    margin-bottom: 24px;
-
+  .coocies-block {
     @include media(desktop) {
       width: 518px;
-      height: 131px;
-      margin-bottom: 54px;
-    }
-  }
-  @media (min-resolution: 192dpi) {
-    .title-block {
-      background: url('./../img/title-bg/group@2x.png') center no-repeat;
-      background-size: cover;
     }
   }
   .coocies-title {
-    font-family: $_font_wendy;
-    font-weight: 400;
-    font-size: 20px;
     line-height: 1.5;
-    text-transform: uppercase;
-    color: #fff;
     padding: 21px 57px 36px;
-    text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
-      1px 1px 2px black;
+    line-height: 1.5;
     @include media(desktop) {
       padding: 36px 115px 59px;
-      font-size: 36px;
       line-height: 1;
     }
   }

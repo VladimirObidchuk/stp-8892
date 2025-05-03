@@ -89,6 +89,7 @@ body {
   @include media(desktop) {
     background-size: cover;
   }
+  margin-bottom: 24px;
 }
 @media (min-resolution: 192dpi) {
   .block-title {

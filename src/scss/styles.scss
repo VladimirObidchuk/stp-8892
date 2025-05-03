@@ -9,6 +9,7 @@
 @import './privacy-policy.scss';
 @import './coocies-policy.scss';
 @import './btn-home.scss';
+@import './coocies-accept.scss';
 
 :root {
   font-family: Poppins, Roboto, Wendy One, sans-serif;
@@ -32,6 +33,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: #e4eef8;
+  position: relative;
 }
 .container {
   min-width: 320px;

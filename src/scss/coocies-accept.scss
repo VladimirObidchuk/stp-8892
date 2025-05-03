@@ -1,0 +1,119 @@
+.cookies-accept {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  background-color: $_bg_accept_cookies;
+  padding: 15px 0;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+
+  .coocies-left-side {
+    align-items: center;
+  }
+  .img-left-side {
+    width: 50px;
+    height: 50px;
+    @include media(desktop) {
+      width: 187px;
+      height: 187px;
+    }
+  }
+
+  .cookies-title-side {
+    font-family: $_font_wendy;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0.9;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+    text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
+      1px 1px 2px black;
+    @include media(desktop) {
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+  .cookies-text-side {
+    font-family: $_font_pop;
+    margin-bottom: 12px;
+    @include media(desktop) {
+      font-size: 24px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 2;
+      color: #fff;
+    }
+  }
+  .button-side-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media(desktop) {
+      justify-content: left;
+      gap: 24px;
+    }
+  }
+}
+.cookies-accept .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+.btn-cookies {
+  font-family: $_font_pop;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
+    1px 1px 2px black;
+  border-radius: 20px;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+.btn-accept {
+  padding: 12px 22px;
+  background-color: $_btn_color;
+  &:active {
+    border: 1px solid $_btn_play_border_active_color;
+    box-shadow: 0 2px 0 0 $_btn_play_border_active_color;
+    background-color: $_btn_active_color;
+  }
+  @include media(desktop) {
+    &:hover {
+      border: 1px solid $_btn_play_border_color;
+      box-shadow: 0 2px 0 0 $_btn_play_border_color;
+      background-color: $_btn_hover_color;
+    }
+  }
+}
+.btn-decline {
+  padding: 12px 22px;
+  background-color: transparent;
+  &:active {
+    border: 1px solid $_btn_play_border_active_color;
+    box-shadow: 0 2px 0 0 $_btn_play_border_active_color;
+  }
+  @include media(desktop) {
+    &:hover {
+      border: 1px solid $_btn_play_border_color;
+      box-shadow: 0 2px 0 0 $_btn_play_border_color;
+    }
+  }
+}
+.is-accept {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

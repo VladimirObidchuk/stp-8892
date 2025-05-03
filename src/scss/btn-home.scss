@@ -17,6 +17,10 @@
   border: 1px solid $_btn_play_border_color;
   box-shadow: 0 2px 0 0 $_btn_play_border_color;
   border-radius: 20px;
+  margin-bottom: 34px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:active {
     border: 1px solid $_btn_play_border_active_color;
@@ -24,6 +28,9 @@
     background-color: $_btn_active_color;
   }
   @include media(desktop) {
+    & {
+      margin-bottom: 0;
+    }
     &:hover {
       border: 1px solid $_btn_play_border_color;
       box-shadow: 0 2px 0 0 $_btn_play_border_color;

@@ -1,0 +1,97 @@
+.privacy-policy {
+  max-width: 100%;
+  background-color: $_main_bg_color;
+}
+
+.title-privacy {
+  background-image: url(../img/Group.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  max-width: 254px;
+  height: 70px;
+
+  @include media(desktop) {
+    max-width: 447px;
+    height: 131px;
+    font-size: 36px;
+
+    /* line-height: 36px; */
+    line-height: 1;
+    margin-left: 341px;
+  }
+
+  font-family: $_font_wendy;
+  font-weight: 400;
+  font-size: 20px;
+
+  /* line-height: 30px; */
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: $_header_color;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: 34px;
+}
+
+.title-h3 {
+  font-family: $_font_pop;
+  font-weight: 500;
+  font-size: 20px;
+
+  /* line-height: 36px; */
+  line-height: 1.8;
+  color: #000;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 24px;
+
+    line-height: 1.5;
+  }
+}
+
+.privacy-list {
+  list-style: initial;
+  margin-bottom: 32px;
+}
+
+.privacy-link-list {
+  list-style: initial;
+  text-decoration: underline;
+}
+
+.privacy-item-text {
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.privacy-list-1 {
+  list-style: initial;
+}
+
+.privacy-text-1 {
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.privacy-text {
+  font-family: $_font_pop;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 32px;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}

@@ -4,7 +4,7 @@
 }
 
 .title-privacy {
-  background-image: url(../img/Group.png);
+  background-image: url(../img/title-bg/Group.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -94,4 +94,8 @@
   @include media(desktop) {
     font-size: 20px;
   }
+}
+
+.privacy-link-footer {
+  text-decoration: underline;
 }

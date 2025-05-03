@@ -1,0 +1,15 @@
+.game-desc-block {
+  height: 70px;
+  width: 288px;
+  @include media(desktop) {
+    width: 527px;
+    height: 131px;
+  }
+}
+.game-desc-title {
+  line-height: 1.5;
+  padding: 21px 45px 34px;
+  @include media(desktop) {
+    padding: 36px 87px 59px;
+  }
+}

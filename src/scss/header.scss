@@ -72,14 +72,26 @@
   }
 }
 
-.burger-svg {
+.burger-svg,
+.img-close {
   stroke: #1b1918;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.img-close {
+  fill: #1b1918;
+}
+
+.img-close:focus {
+  fill: $_text_btn_hover_color;
+}
 .burger-svg:focus,
-.burger-svg:hover {
+.img-close:focus {
   stroke: $_text_btn_hover_color;
 }
-.burger-svg:active {
+.burger-svg:active,
+.img-close:active {
   stroke: $_text_btn_active_color;
+}
+.img-close:active {
+  fill: $_text_btn_active_color;
 }

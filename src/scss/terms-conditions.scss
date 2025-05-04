@@ -11,19 +11,34 @@
 
 .title-terms {
   width: 277px;
+  line-height: 1.5;
+  background: url('./../img/title-bg/group.png') center no-repeat;
 
+  background-size: contain;
+  margin-bottom: 24px;
   padding: 11px 74px 23px 78px;
   @include media(desktop) {
+    background: url('./../img/title-bg/Terms_Bg.png') center no-repeat;
     width: 642px;
-    height: 131px;
     padding: 36px 101px 59px;
     line-height: 1;
   }
-
-  margin-bottom: 54px;
 }
 
-.terms-blok {
+@media (min-resolution: 192dpi) {
+  .title-terms {
+    background: url('./../img/title-bg/Terms-bg@2x.png') center no-repeat;
+    background-size: cover;
+  }
+}
+
+.terms-main {
+  @include media(desktop) {
+    margin-top: 54px;
+  }
+}
+
+.terms-block {
   margin-bottom: 32px;
 }
 

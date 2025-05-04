@@ -1,9 +1,21 @@
 .coocies-policy {
   padding: 42px 0 0;
+  background-color: $_main_bg_color;
   .container {
     margin-bottom: 34px;
     @include media(desktop) {
       padding: 0 96px;
+    }
+  }
+
+  .coocies-title {
+    width: 277px;
+    height: 79px;
+    padding: 21px 57px 36px;
+    @include media(desktop) {
+      width: 518px;
+      padding: 36px 115px 59px;
+      line-height: 1;
     }
   }
   .coocies-main {
@@ -13,20 +25,7 @@
     font-family: $_font_pop;
     color: $_police_color;
   }
-  .coocies-block {
-    @include media(desktop) {
-      width: 518px;
-    }
-  }
-  .coocies-title {
-    line-height: 1.5;
-    padding: 21px 57px 36px;
-    line-height: 1.5;
-    @include media(desktop) {
-      padding: 36px 115px 59px;
-      line-height: 1;
-    }
-  }
+
   .coocies-block-1 {
     display: flex;
     gap: 16px;

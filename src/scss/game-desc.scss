@@ -1,29 +1,18 @@
 .game-desc-title {
-  height: 70px;
   width: 288px;
-  @include media(desktop) {
-    width: 527px;
-    height: 131px;
-  }
-  line-height: 1.5;
-  padding: 21px 45px 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: url('./../img/title-bg/title.png') center no-repeat;
   background-size: contain;
   @include media(desktop) {
-    background-size: contain;
-  }
-  margin-bottom: 24px;
-
-  @include media(desktop) {
+    width: 527px;
+    line-height: 1;
     padding: 36px 87px 59px;
   }
+  margin-bottom: 24px;
+  line-height: 1.5;
+  padding: 21px 45px 34px;
 }
-
 @media (min-resolution: 192dpi) {
-  .game-desc-title {
+  .title-game-desc {
     background: url('./../img/title-bg/title@2x.png') center no-repeat;
   }
 }

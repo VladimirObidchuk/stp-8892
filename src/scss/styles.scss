@@ -48,30 +48,15 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+
 .title-block,
 .block-title {
   text-align: center;
   margin: 0 auto;
 }
-.title-block {
-  width: auto;
-  height: 79px;
-  background: url('./../img/title-bg/group.png') center no-repeat;
-  background-size: cover;
-  margin-bottom: 24px;
-  @include media(desktop) {
-    height: 131px;
-    margin-bottom: 54px;
-  }
-}
-@media (min-resolution: 192dpi) {
-  .title-block {
-    background: url('./../img/title-bg/group@2x.png') center no-repeat;
-    background-size: cover;
-  }
-}
 .title,
 .title-basic {
+  line-height: 1.8;
   font-family: $_font_wendy;
   font-weight: 400;
   font-size: 20px;
@@ -85,11 +70,28 @@ body {
     font-size: 36px;
   }
 }
+.title-block {
+  line-height: 1.5;
+  background: url('./../img/title-bg/group.png') center no-repeat;
+  background-size: contain;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    height: 131px;
+    margin-bottom: 54px;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .title-block {
+    background: url('./../img/title-bg/group@2x.png') center no-repeat;
+    background-size: cover;
+  }
+}
+
 .title {
   line-height: 1.5;
 }
-.title-basic {
-  background: url('./../img/title-bg/title.png') center no-repeat;
+.basic-title {
+  background: url('./../img/title-bg/title_all.png') center no-repeat;
   background-size: contain;
   @include media(desktop) {
     background-size: contain;
@@ -100,7 +102,7 @@ body {
   }
 }
 @media (min-resolution: 192dpi) {
-  .title-basic {
-    background: url('./../img/title-bg/title@2x.png') center no-repeat;
+  .basic-title {
+    background: url('./../img/title-bg/title_all@2x.png') center no-repeat;
   }
 }

@@ -1,14 +1,9 @@
-.reviews-block {
-  height: 62px;
+.reviews-title {
   width: 182px;
+  padding: 18px 46px 29px;
   @include media(desktop) {
     width: 426px;
     height: 131px;
-  }
-}
-.reviews-title {
-  padding: 18px 46px 29px;
-  @include media(desktop) {
     padding: 36px 137px 59px;
   }
 }

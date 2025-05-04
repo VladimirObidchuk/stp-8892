@@ -1,15 +1,9 @@
-.faq-block {
-  height: 62px;
+.faq-title {
   width: 141px;
-  background-size: contain;
+  padding: 21px 50px 26px;
   @include media(desktop) {
     width: 403px;
     height: 131px;
-  }
-}
-.faq-title {
-  padding: 21px 50px 26px;
-  @include media(desktop) {
     padding: 36px 165px 59px;
   }
 }

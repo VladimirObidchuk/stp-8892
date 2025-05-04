@@ -1,15 +1,29 @@
-.game-desc-block {
+.game-desc-title {
   height: 70px;
   width: 288px;
   @include media(desktop) {
     width: 527px;
     height: 131px;
   }
-}
-.game-desc-title {
   line-height: 1.5;
   padding: 21px 45px 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./../img/title-bg/title.png') center no-repeat;
+  background-size: contain;
+  @include media(desktop) {
+    background-size: contain;
+  }
+  margin-bottom: 24px;
+
   @include media(desktop) {
     padding: 36px 87px 59px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .game-desc-title {
+    background: url('./../img/title-bg/title@2x.png') center no-repeat;
   }
 }

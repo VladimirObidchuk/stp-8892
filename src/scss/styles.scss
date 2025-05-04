@@ -70,14 +70,15 @@ body {
     background-size: cover;
   }
 }
-
 .title,
 .title-basic {
   font-family: $_font_wendy;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
+  margin: 0 auto;
   text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
     1px 1px 2px black;
   @include media(desktop) {
@@ -87,23 +88,19 @@ body {
 .title {
   line-height: 1.5;
 }
-.block-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title-basic {
   background: url('./../img/title-bg/title.png') center no-repeat;
+  background-size: contain;
   @include media(desktop) {
-    background-size: cover;
+    background-size: contain;
   }
   margin-bottom: 24px;
-}
-@media (min-resolution: 192dpi) {
-  .block-title {
-    background: url('./../img/title-bg/title@2x.png') center no-repeat;
-  }
-}
-.title-basic {
   @include media(desktop) {
     line-height: 1;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .title-basic {
+    background: url('./../img/title-bg/title@2x.png') center no-repeat;
   }
 }

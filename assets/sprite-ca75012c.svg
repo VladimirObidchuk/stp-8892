@@ -9,5 +9,8 @@
 	<symbol id="icon-burger" viewBox="0 0 26 17" fill="none">
       <path d="M1.75 8.5H24.25M1.75 1H24.25M1.75 16H24.25" stroke="#1B1918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+	<symbol id="icon-close" viewBox="0 0 18 19" fill="none">
+      <path d="M2 18.25L0.25 16.5L7.25 9.5L0.25 2.5L2 0.75L9 7.75L16 0.75L17.75 2.5L10.75 9.5L17.75 16.5L16 18.25L9 11.25L2 18.25Z" fill="#1B1918"/>
+    </symbol>
     </defs>
 </svg>

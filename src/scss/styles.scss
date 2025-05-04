@@ -44,6 +44,10 @@ body {
     padding: 0 96px;
   }
 }
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 .title-block,
 .block-title {
   text-align: center;

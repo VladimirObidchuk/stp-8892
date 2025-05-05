@@ -1,9 +1,40 @@
+.game-desc {
+  position: relative;
+  padding: 0 0 44px 0;
+  background: url('../img/desc/bg-desc-mobile.png') center no-repeat;
+  background-size: 100% 82%;
+  background-position: 0 50px;
+  @include media(desktop) {
+    background: url('../img/desc/bg-desc.webp') center no-repeat;
+    background-position: 0 0px;
+    background-size: 100% 100%;
+    padding: 151px 0 67px;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .game-desc {
+    background: url('../img/desc/bg-desc-mobile@2x.png') center no-repeat;
+    background-size: 100% 82%;
+    background-position: 0 50px;
+    @include media(desktop) {
+      background: url('../img/desc/bg-desc@2x.webp') center no-repeat;
+      background-position: 0 0px;
+      background-size: 100% 100%;
+      padding: 151px 0 67px;
+    }
+  }
+}
 .game-desc-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -10px;
   width: 288px;
   background: url('./../img/title-bg/title.png') center no-repeat;
   background-size: contain;
   @include media(desktop) {
     width: 527px;
+    top: 60px;
     line-height: 1;
     padding: 36px 87px 59px;
   }
@@ -14,5 +45,38 @@
 @media (min-resolution: 192dpi) {
   .title-game-desc {
     background: url('./../img/title-bg/title@2x.png') center no-repeat;
+  }
+}
+.desc-block {
+  background-color: $_main_bg_card_color;
+  border: 3px solid $_main_bg_card_border_color;
+  border-radius: 33px;
+  padding: 23px 13px 15px;
+  margin-top: 84px;
+  @include media(desktop) {
+    width: 820px;
+    margin: 0 auto;
+    padding: 90px 36px 54px;
+  }
+}
+
+.desc-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 23px;
+  @include media(desktop) {
+    margin-bottom: 39px;
+  }
+}
+.desc-text {
+  font-family: $_font_pop;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $_main_color;
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.8;
   }
 }

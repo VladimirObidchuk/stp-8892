@@ -1,8 +1,93 @@
+.faq {
+  padding-top: 29px;
+}
+.faq .container {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+  }
+}
 .faq-title {
   width: 182px;
   padding: 21px 50px 26px;
   @include media(desktop) {
     width: 403px;
     padding: 36px 165px 59px;
+  }
+}
+#faq-accordion {
+  width: 288px;
+  @include media(desktop) {
+    width: 836px;
+  }
+}
+#faq-accordion #ac-0,
+#faq-accordion #ac-1,
+#faq-accordion #ac-2,
+#faq-accordion #ac-3 {
+  border: none;
+}
+#faq-accordion #ac-0 .ac-header {
+  //   width: 286px;
+}
+
+#faq-accordion #ac-0 .ac-header #ac-trigger-0,
+#faq-accordion #ac-1 .ac-header #ac-trigger-1,
+#faq-accordion #ac-2 .ac-header #ac-trigger-2,
+#faq-accordion #ac-3 .ac-header #ac-trigger-3 {
+  border: 3px solid $_main_bg_card_border_color;
+  border-radius: 20px;
+  background-color: $_main_bg_card_color;
+  padding: 19px 69px 19px 16px;
+}
+#faq-accordion #ac-0.is-active > .ac-header #ac-trigger-0::after,
+#faq-accordion #ac-1.is-active > .ac-header #ac-trigger-1::after,
+#faq-accordion #ac-2.is-active > .ac-header #ac-trigger-2::after,
+#faq-accordion #ac-3.is-active > .ac-header #ac-trigger-3::after {
+  content: '\2716';
+}
+#faq-accordion #ac-0 .ac-header #ac-trigger-0,
+#faq-accordion #ac-1 .ac-header #ac-trigger-1,
+#faq-accordion #ac-2 .ac-header #ac-trigger-2,
+#faq-accordion #ac-3 .ac-header #ac-trigger-3 {
+  font-family: $_font_pop;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1;
+  color: $_main_color;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+#faq-accordion #ac-0 #ac-panel-0,
+#faq-accordion #ac-1 #ac-panel-1,
+#faq-accordion #ac-2 #ac-panel-2,
+#faq-accordion #ac-3 #ac-panel-3 {
+  background-color: $_main_bg_sub_card_color;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-color: $_main_bg_card_border_color;
+  border-right-color: $_main_bg_card_border_color;
+  border-bottom-color: $_main_bg_card_border_color;
+  padding-top: 0px;
+  border-radius: 25px 25px 20px 20px;
+}
+#faq-accordion #ac-0 #ac-panel-0 .ac-text,
+#faq-accordion #ac-1 #ac-panel-1 .ac-text,
+#faq-accordion #ac-2 #ac-panel-2 .ac-text,
+#faq-accordion #ac-3 #ac-panel-3 .ac-text {
+  font-family: $_font_pop;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000;
+  @include media(desktop) {
+    font-size: 16px;
   }
 }

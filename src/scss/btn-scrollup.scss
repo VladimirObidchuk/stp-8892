@@ -1,0 +1,29 @@
+.btn-scroll {
+  padding: 10px 23px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  background-color: $_btn_color;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 9999;
+  transform: rotate(270deg);
+  &:active {
+    background-color: $_btn_active_color;
+  }
+  @include media(desktop) {
+    padding: 25px 36px;
+    bottom: 30px;
+    right: 30px;
+    &:hover {
+      background-color: $_btn_hover_color;
+    }
+  }
+}
+.btn-scroll::after {
+  content: '\276F';
+  font-size: 30px;
+}

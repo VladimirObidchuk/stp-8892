@@ -4,7 +4,6 @@
   background: url('../img/desc/bg-desc-mobile.png') center no-repeat;
   background-size: 100% 82%;
   background-position: 0 50px;
-  border-top: $_bg_accept_cookies;
   @include media(desktop) {
     background: url('../img/desc/bg-desc.webp') center no-repeat;
     background-position: 50% 0;

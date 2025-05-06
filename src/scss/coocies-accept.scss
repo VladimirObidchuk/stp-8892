@@ -12,16 +12,23 @@
 
   .coocies-left-side {
     align-items: center;
+    position: relative;
   }
   .img-left-side {
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 31px;
+    width: 54px;
+    height: 54px;
     @include media(desktop) {
+      position: static;
       width: 187px;
       height: 187px;
     }
   }
-
+  .cookies-right-side {
+    padding-top: 35px;
+  }
   .cookies-title-side {
     font-family: $_font_wendy;
     font-weight: 400;
@@ -29,7 +36,6 @@
     line-height: 0.9;
     text-transform: capitalize;
     color: #fff;
-    text-align: center;
     margin-bottom: 12px;
     text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
       1px 1px 2px black;
@@ -50,10 +56,14 @@
     }
   }
   .button-side-block {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
     @include media(desktop) {
+      flex-direction: row;
       justify-content: left;
       gap: 24px;
     }
@@ -69,6 +79,7 @@
   }
 }
 .btn-cookies {
+  width: 100%;
   font-family: $_font_pop;
   font-weight: 600;
   font-size: 10px;
@@ -80,6 +91,7 @@
     1px 1px 2px black;
   border-radius: 20px;
   @include media(desktop) {
+    width: 187px;
     font-size: 16px;
   }
 }

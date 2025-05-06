@@ -6,7 +6,7 @@
   @include media(desktop) {
     background: url('../img/reviews/bg-reviews-desc.png') center no-repeat;
     padding-top: 96px;
-    padding-bottom: 104px;
+    padding-bottom: 74px;
     background-position: 50% 65%;
   }
 }
@@ -17,8 +17,8 @@
     background-position: 0 55px;
     @include media(desktop) {
       background: url('../img/reviews/bg-reviews-desc@2x.png') center no-repeat;
-      background-size: contain;
-      background-position: 0 190px;
+      background-size: 1200px 67%;
+      background-position: 50% 65%;
     }
   }
 }

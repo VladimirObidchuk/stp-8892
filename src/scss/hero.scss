@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     background-position: bottom right, center;
     background-size: 353px, cover;
+    padding-bottom: 50px;
   }
 }
 @media (min-resolution: 192dpi) {
@@ -22,7 +23,7 @@
     background-size: 128px, cover;
 
     @include media(desktop) {
-      background-size: 353px, cover;
+      background-size: 353px, 1200px;
     }
   }
 }

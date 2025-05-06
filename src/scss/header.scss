@@ -1,6 +1,11 @@
 .header {
   padding: 8px 0;
   background-color: $_header_color;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .nav-logo {
   @include media(desktop) {

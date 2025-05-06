@@ -8,29 +8,25 @@ import 'swiper/css/effect-coverflow';
 const gallery = new Swiper('.gallery-swiper', {
   modules: [Navigation, Scrollbar, EffectCoverflow],
   effect: 'coverflow',
-
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
-    stretch: 470,
+    stretch: -30,
     depth: 100,
     modifier: 1.7,
+    slideShadows: true,
   },
   breakpoints: {
     320: {
       coverflowEffect: {
-        stretch: -10,
+        stretch: 0,
         depth: 0,
+        modifier: 0,
       },
     },
     1200: {
       centeredSlides: true,
       grabCursor: true,
-      slideShadows: true,
-      stretch: 470,
-      depth: 100,
-      modifier: 1.7,
-      slideShadows: true,
     },
   },
 

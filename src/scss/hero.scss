@@ -7,11 +7,11 @@
 
   @include media(desktop) {
     background-image: url('../img/hero/hero-1.png'),
-      url('../img/hero/bg-hero.webp'), url('../img/hero/mob-bg-hero@2x.png');
+      url('../img/hero/bg-hero.webp');
     background-repeat: no-repeat;
     background-position: bottom right, center;
     background-size: 353px, cover;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
   }
 }
 @media (min-resolution: 192dpi) {
@@ -32,7 +32,7 @@
   padding-bottom: 85px;
 
   @include media(desktop) {
-    padding-top: 162px;
+    padding-top: 97px;
     padding-bottom: 201px;
   }
 }

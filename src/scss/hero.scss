@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-position: 92% 100%, 50% 50%;
     background-size: 358px 353px, 1200px 100%;
-    // padding-bottom: 50px;
   }
 }
 @media (min-resolution: 192dpi) {
@@ -24,7 +23,9 @@
     background-size: 128px, cover;
 
     @include media(desktop) {
-      background-size: 353px, 1200px;
+      background-repeat: no-repeat;
+      background-position: 92% 100%, 50% 50%;
+      background-size: 358px 353px, 1200px 100%;
     }
   }
 }

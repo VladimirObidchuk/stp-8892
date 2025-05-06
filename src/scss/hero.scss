@@ -6,11 +6,12 @@
   background-size: 128px, cover;
 
   @include media(desktop) {
+    height: 631px;
     background-image: url('../img/hero/hero-1.png'),
       url('../img/hero/bg-hero.webp');
     background-repeat: no-repeat;
-    background-position: bottom right, center;
-    background-size: 353px, cover;
+    background-position: 92% 100%, 50% 50%;
+    background-size: 358px 353px, 1200px 100%;
     // padding-bottom: 50px;
   }
 }

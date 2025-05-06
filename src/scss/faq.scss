@@ -68,16 +68,33 @@
   content: '\2716';
 }
 #faq-accordion #ac-0 .ac-header #ac-trigger-0,
+#faq-accordion #ac-0 .ac-header #ac-trigger-0::after,
 #faq-accordion #ac-1 .ac-header #ac-trigger-1,
+#faq-accordion #ac-1 .ac-header #ac-trigger-1::after,
 #faq-accordion #ac-2 .ac-header #ac-trigger-2,
-#faq-accordion #ac-3 .ac-header #ac-trigger-3 {
+#faq-accordion #ac-2 .ac-header #ac-trigger-2::after,
+#faq-accordion #ac-3 .ac-header #ac-trigger-3,
+#faq-accordion #ac-3 .ac-header #ac-trigger-3::after {
   font-family: $_font_pop;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.1;
   color: $_main_color;
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 24px;
+  }
+}
+
+#faq-accordion #ac-0 .ac-header #ac-trigger-0::after,
+#faq-accordion #ac-1 .ac-header #ac-trigger-1::after,
+#faq-accordion #ac-2 .ac-header #ac-trigger-2::after,
+#faq-accordion #ac-3 .ac-header #ac-trigger-3::after {
+  content: '\271a';
+  font-size: 24px;
+  font-size: 16px;
+  @include media(desktop) {
+    width: 24px;
+    font-size: 24px;
   }
 }
 #faq-accordion #ac-0 #ac-panel-0,

@@ -8,6 +8,7 @@ import 'swiper/css/effect-coverflow';
 const gallery = new Swiper('.gallery-swiper', {
   modules: [Navigation, Scrollbar, EffectCoverflow],
   effect: 'coverflow',
+  spaceBetween: 20,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
@@ -25,6 +26,7 @@ const gallery = new Swiper('.gallery-swiper', {
       },
     },
     1200: {
+      spaceBetween: 0,
       centeredSlides: true,
       grabCursor: true,
     },

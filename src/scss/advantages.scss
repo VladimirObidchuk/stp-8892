@@ -112,14 +112,14 @@
 
 .advantages-item-block-1 {
   @include media(desktop) {
-    padding: 6px 0px;
+    padding: 0px;
   }
 }
 
 .advantages-item-block-2 {
   padding: 14px 0px;
   @include media(desktop) {
-    padding-top: 6px 0px;
+    padding: 0px;
   }
 }
 

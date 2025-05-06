@@ -42,6 +42,25 @@
   background-color: $_main_bg_card_color;
   padding: 19px 69px 19px 16px;
 }
+#faq-accordion #ac-0.is-active > .ac-header #ac-trigger-0,
+#faq-accordion #ac-1.is-active > .ac-header #ac-trigger-1,
+#faq-accordion #ac-2.is-active > .ac-header #ac-trigger-2,
+#faq-accordion #ac-3.is-active > .ac-header #ac-trigger-3 {
+  border: none;
+  border-radius: 20px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: $_main_bg_card_border_color;
+}
+#faq-accordion #ac-0.is-active,
+#faq-accordion #ac-1.is-active,
+#faq-accordion #ac-2.is-active,
+#faq-accordion #ac-3.is-active {
+  border: 3px solid $_main_bg_card_border_color;
+  border-radius: 20px;
+  background-color: $_main_bg_card_color;
+  background-color: $_main_bg_sub_card_color;
+}
 #faq-accordion #ac-0.is-active > .ac-header #ac-trigger-0::after,
 #faq-accordion #ac-1.is-active > .ac-header #ac-trigger-1::after,
 #faq-accordion #ac-2.is-active > .ac-header #ac-trigger-2::after,
@@ -65,18 +84,7 @@
 #faq-accordion #ac-1 #ac-panel-1,
 #faq-accordion #ac-2 #ac-panel-2,
 #faq-accordion #ac-3 #ac-panel-3 {
-  background-color: $_main_bg_sub_card_color;
-  border-left-width: 3px;
-  border-right-width: 3px;
-  border-bottom-width: 3px;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-color: $_main_bg_card_border_color;
-  border-right-color: $_main_bg_card_border_color;
-  border-bottom-color: $_main_bg_card_border_color;
-  padding-top: 0px;
-  border-radius: 25px 25px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 #faq-accordion #ac-0 #ac-panel-0 .ac-text,
 #faq-accordion #ac-1 #ac-panel-1 .ac-text,

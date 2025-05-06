@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   background: #e4eef8;
-  position: relative;
+  //   position: relative;
 }
 .container {
   min-width: 320px;
@@ -70,10 +70,12 @@ body {
   text-align: center;
   color: #fff;
   margin: 0 auto;
+  margin-bottom: 24px;
   text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
     1px 1px 2px black;
   @include media(desktop) {
     font-size: 36px;
+    margin-bottom: 0;
   }
 }
 .title-block {
@@ -98,9 +100,9 @@ body {
 }
 .basic-title {
   background: url('./../img/title-bg/title_all.png') center no-repeat;
-  background-size: contain;
+  background-size: 100% 110%;
   @include media(desktop) {
-    background-size: contain;
+    // background-size: contain;
   }
   //   margin-bottom: 24px;
   @include media(desktop) {

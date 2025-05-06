@@ -2,6 +2,7 @@
   padding-top: 29px;
 }
 .faq .container {
+  position: relative;
   @include media(desktop) {
     display: flex;
     align-items: center;
@@ -9,12 +10,29 @@
     gap: 46px;
   }
 }
+.faq-img {
+  position: absolute;
+  width: 91px;
+  height: 96px;
+  top: -16px;
+  left: 2px;
+  @include media(desktop) {
+    width: 263px;
+    height: 242px;
+    top: -67px;
+    left: 145px;
+  }
+}
 .faq-title {
-  width: 182px;
-  padding: 21px 50px 26px;
+  width: 141px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include media(desktop) {
     width: 403px;
-    padding: 36px 165px 59px;
+    height: 131px;
+    margin-bottom: 0;
   }
 }
 #faq-accordion {

@@ -5,6 +5,9 @@
   display: flex;
   padding: 0 0 85px;
   overflow: hidden;
+  @include media(desktop) {
+    padding-top: 46px;
+  }
 }
 .gallery-title {
   width: 182px;

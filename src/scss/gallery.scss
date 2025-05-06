@@ -52,10 +52,16 @@
 #gallery-swiper .swiper-button-prev {
   left: 35%;
   transform: translate(-50%, 0);
+  @include media(desktop) {
+    left: 45%;
+  }
 }
 #gallery-swiper .swiper-button-next {
   right: 35%;
   transform: translate(50%, 0);
+  @include media(desktop) {
+    right: 45%;
+  }
 }
 #gallery-swiper .swiper-button-next::after,
 #gallery-swiper .swiper-button-prev::after {
@@ -64,5 +70,12 @@
   text-align: center;
 }
 #gallery-swiper .swiper-scrollbar {
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 64px;
+  background-color: $_bg_scroll_bar;
+}
+#gallery-swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: $_bg_scroll_bar_scroll;
 }

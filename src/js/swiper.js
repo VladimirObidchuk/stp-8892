@@ -7,38 +7,33 @@ import 'swiper/css/effect-coverflow';
 
 const gallery = new Swiper('.gallery-swiper', {
   modules: [Navigation, Scrollbar, EffectCoverflow],
-  slidesPerView: 1,
-  spaceBetween: 10,
   effect: 'coverflow',
-  centeredSlides: true,
+
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 1,
-    slideShadows: true,
+    stretch: 470,
+    depth: 100,
+    modifier: 1.7,
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
       coverflowEffect: {
-        stretch: 0,
+        stretch: -10,
         depth: 0,
       },
     },
     1200: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: -30,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-      },
+      centeredSlides: true,
+      grabCursor: true,
+      slideShadows: true,
+      stretch: 470,
+      depth: 100,
+      modifier: 1.7,
+      slideShadows: true,
     },
   },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -47,7 +42,8 @@ const gallery = new Swiper('.gallery-swiper', {
     el: '.swiper-scrollbar',
   },
 });
-let reviews; // Глобальна змінна для Swiper
+
+let reviews;
 
 function initSwiper() {
   if (window.innerWidth < 1200) {
@@ -61,24 +57,20 @@ function initSwiper() {
         prevEl: '.swiper-button-prev',
       },
     });
-    // Показуємо навігацію
     document.querySelector('.swiper-button-next').style.display = 'block';
     document.querySelector('.swiper-button-prev').style.display = 'block';
   } else {
     if (reviews) {
-      reviews.destroy(true, true); // Видаляємо Swiper
+      reviews.destroy(true, true);
     }
 
-    // Ховаємо навігацію
     document.querySelector('.swiper-button-next').style.display = 'none';
     document.querySelector('.swiper-button-prev').style.display = 'none';
   }
 }
 
-// Виконуємо перевірку при завантаженні сторінки
 initSwiper();
 
-// Додаємо слухача подій для адаптації при зміні розміру екрану
 window.addEventListener('resize', () => {
   initSwiper();
 });

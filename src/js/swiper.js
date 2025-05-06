@@ -19,6 +19,7 @@ const gallery = new Swiper('.gallery-swiper', {
   },
   breakpoints: {
     320: {
+      spaceBetween: 20,
       coverflowEffect: {
         stretch: 0,
         depth: 0,

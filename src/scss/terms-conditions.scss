@@ -18,7 +18,7 @@
   margin-bottom: 24px;
   padding: 11px 74px 23px 78px;
   @include media(desktop) {
-    background: url('./../img/title-bg/Terms_Bg.png') center no-repeat;
+    background: url('./../img/title-bg/terms_Bg.png') center no-repeat;
     width: 642px;
     padding: 36px 101px 59px;
     line-height: 1;
@@ -27,8 +27,8 @@
 
 @media (min-resolution: 192dpi) {
   .title-terms {
-    background: url('./../img/title-bg/Terms-bg@2x.png') center no-repeat;
-    background-size: cover;
+    background: url('./../img/title-bg/terms-bg@2x.png') center no-repeat;
+    background-size: contain;
   }
 }
 
@@ -46,8 +46,6 @@
   font-family: $_font_pop;
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   color: $_police_color;
 

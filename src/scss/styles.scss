@@ -38,15 +38,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   background: #e4eef8;
-  //   position: relative;
 }
 .container {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
   @include media(desktop) {
-    max-width: 1200px;
+    min-width: 1200px;
     padding: 0 36px;
   }
 }

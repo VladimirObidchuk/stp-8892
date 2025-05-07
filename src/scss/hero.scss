@@ -1,8 +1,8 @@
 .hero {
   background-image: url('../img/hero/mob-bg-hero.png');
   background-repeat: no-repeat;
-  background-position: bottom right, center;
-  background-size: cover;
+  background-position: 50% 100%;
+  background-size: 320px;
   padding-top: 57px;
 
   @include media(desktop) {
@@ -94,8 +94,7 @@
 }
 
 .hero-btn {
-  white-space: nowrap;
-
+  //   white-space: nowrap;
   text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
     1px 1px 2px black;
   font-family: $_font_pop;
@@ -104,11 +103,9 @@
   line-height: 1.5;
   text-transform: capitalize;
   color: $_header_color;
-
-  padding: 8px 24px;
+  padding: 10px 31px;
   background-color: $_btn_color;
-  width: 136px;
-  height: 44px;
+
   border: 1px solid $_btn_play_border_color;
   box-shadow: 0 2px 0 0 $_btn_play_border_color;
   border-radius: 20px;
@@ -117,8 +114,7 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include media(desktop) {
-    width: 122px;
-    height: 44px;
+    padding: 8px 24px;
   }
 }
 

@@ -1,18 +1,19 @@
 .wrapper {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 320px;
   height: 100%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms ease, visibility 250ms ease, transform 400ms ease;
   overflow: hidden;
-  z-index: 999;
+  z-index: 9999;
 }
 
-body.modal-open {
+body .modal-open {
   overflow: hidden;
   height: 100vh;
 }

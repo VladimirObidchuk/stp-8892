@@ -4,7 +4,10 @@
   bottom: 0;
   z-index: 1000;
   background-color: $_bg_accept_cookies;
-  padding: 15px 0;
+  padding: 12px 0px;
+  @include media(desktop) {
+    padding: 0px;
+  }
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
@@ -27,7 +30,12 @@
     }
   }
   .cookies-right-side {
-    padding-top: 35px;
+    padding-top: 23px;
+
+    @include media(desktop) {
+      padding-top: 32px;
+      padding-left: 14px;
+    }
   }
   .cookies-title-side {
     font-family: $_font_wendy;
@@ -36,7 +44,7 @@
     line-height: 0.9;
     text-transform: capitalize;
     color: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black,
       1px 1px 2px black;
     @include media(desktop) {
@@ -46,7 +54,10 @@
   }
   .cookies-text-side {
     font-family: $_font_pop;
-    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 24px;
     @include media(desktop) {
       font-size: 24px;
       font-weight: 400;
@@ -73,7 +84,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 16px;
   @include media(desktop) {
     flex-direction: row;
   }
@@ -82,8 +92,10 @@
   width: 100%;
   font-family: $_font_pop;
   font-weight: 600;
-  font-size: 10px;
-  line-height: 1.5;
+  font-size: 16px;
+
+  /* line-height: 20px; */
+  line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -112,7 +124,8 @@
   }
 }
 .btn-decline {
-  padding: 12px 22px;
+  padding: 10px 22px;
+  margin-bottom: 27px;
   background-color: transparent;
   &:active {
     border: 1px solid $_btn_play_border_active_color;

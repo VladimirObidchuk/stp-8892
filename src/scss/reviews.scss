@@ -5,8 +5,7 @@
   background-position: 0 55px;
   @include media(desktop) {
     background: url('../img/reviews/bg-reviews-desc.png') center no-repeat;
-    padding-top: 96px;
-    padding-bottom: 74px;
+    padding: 96px 0px 104px;
     background-position: 50% 65%;
   }
 }
@@ -50,7 +49,10 @@
   background-color: $_main_bg_card_color;
   border: 3px solid $_main_bg_card_border_color;
   border-radius: 45px;
-  padding: 8px 18px;
+  padding: 8px 8px;
+  @include media(desktop) {
+    padding: 16px 18px;
+  }
 }
 .reviews-list {
   position: absolute;
@@ -80,6 +82,10 @@
   line-height: 1.5;
   text-transform: uppercase;
   color: #111010;
+  margin-bottom: 6px;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 .right-text-side {
   font-weight: 400;
@@ -101,7 +107,7 @@
   top: 90%;
 }
 .reviews-container {
-  padding: 20px 0 57px;
+  padding: 54px 0 31px;
 }
 #reviews-swiper .swiper-button-prev {
   left: 35%;

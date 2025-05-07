@@ -5,6 +5,7 @@
     display: grid;
     row-gap: 10px;
     @include media(desktop) {
+      padding: 0 96px;
       grid-template-columns: 6% 1fr;
       grid-template-rows: 1fr;
       align-items: center;

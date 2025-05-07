@@ -11,12 +11,14 @@ if (openModalBtn && closeModalBtn && modal) {
 function openModal() {
   modal.classList.add('is-open');
   document.addEventListener('keydown', handleEscPress);
+  document.body.classList.add('modal-open');
 }
 
 function closeModal() {
   modal.classList.remove('is-open');
   document.removeEventListener('keydown', handleEscPress);
   modal.removeEventListener('click', handleClickOutside);
+  document.body.classList.remove('modal-open');
 }
 
 function handleEscPress(event) {
@@ -30,3 +32,7 @@ function handleClickOutside(event) {
     closeModal();
   }
 }
+
+document.querySelectorAll('[data-modal-link]').forEach(link => {
+  link.addEventListener('click', () => closeModal(modal));
+});

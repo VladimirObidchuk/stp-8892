@@ -8,7 +8,13 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms ease, visibility 250ms ease, transform 400ms ease;
+  overflow: hidden;
   z-index: 999;
+}
+
+body.modal-open {
+  overflow: hidden;
+  height: 100vh;
 }
 
 [data-modal].is-open {
@@ -17,11 +23,12 @@
   pointer-events: auto;
 }
 .modal {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  padding: 8px;
+  padding: 8px 8px 24px;
   position: absolute;
   top: 0;
   right: 0;
@@ -51,11 +58,6 @@
   align-self: baseline;
   margin-left: auto;
 }
-// ? я хз що тут, хіба бекграунд міняти і робити бордер +-
-// .btn-close:hover,
-// .btn-close:focus {
-//   background-color: $_text_btn_hover_color;
-// }
 
 .confidens {
   display: flex;

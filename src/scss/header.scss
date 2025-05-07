@@ -34,7 +34,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  @include media(desktop) {
+    justify-content: space-between;
+  }
 }
 
 .nav-list {
@@ -71,15 +74,19 @@
 
 .burger-btn,
 .btn-close {
-  padding: 0.5em 0.8em;
+  margin-left: auto;
+  padding: 0px;
   font-size: 1rem;
   background-color: transparent;
   border: none;
-  border-radius: 0.5em;
   color: #fff;
   @include media(desktop) {
     display: none;
   }
+}
+
+.btn-close {
+  padding: 6px;
 }
 
 .burger-svg,

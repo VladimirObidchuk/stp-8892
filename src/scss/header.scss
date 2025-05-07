@@ -6,6 +6,12 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+
+  @include media(desktop) {
+    .container {
+      padding: 0 96px;
+    }
+  }
 }
 .nav-logo {
   @include media(desktop) {

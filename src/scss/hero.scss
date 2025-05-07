@@ -13,8 +13,12 @@
   }
 }
 .hero .container {
+  @include media(desktop) {
+    padding: 0 96px;
+  }
   position: relative;
 }
+
 .hero-img {
   width: 130px;
   height: 128px;
@@ -43,12 +47,10 @@
   }
 }
 .hero-block {
-  padding-top: 44px;
-  padding-bottom: 85px;
+  padding: 44px 0px 85px;
 
   @include media(desktop) {
-    padding-top: 97px;
-    padding-bottom: 201px;
+    padding: 97px 0px 201px;
   }
 }
 .hero-title {

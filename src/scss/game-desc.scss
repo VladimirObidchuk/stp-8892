@@ -56,7 +56,7 @@
   @include media(desktop) {
     width: 820px;
     margin: 0 auto;
-    padding: 90px 36px 54px;
+    padding: 90px 26px 54px;
   }
 }
 
@@ -75,6 +75,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: $_main_color;
+  text-indent: 19px;
   @include media(desktop) {
     font-size: 20px;
     line-height: 1.8;

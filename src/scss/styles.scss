@@ -78,7 +78,7 @@ body {
 }
 .title-block {
   line-height: 1.5;
-  background: url('./../img/title-bg/group.png') center no-repeat;
+  background: url('../img/title-bg/group.png') center no-repeat;
   background-size: contain;
   margin-bottom: 24px;
   @include media(desktop) {
@@ -88,7 +88,7 @@ body {
 }
 @media (min-resolution: 192dpi) {
   .title-block {
-    background: url('./../img/title-bg/group@2x.png') center no-repeat;
+    background: url('../img/title-bg/group@2x.png') center no-repeat;
     background-size: cover;
   }
 }
@@ -97,7 +97,7 @@ body {
   line-height: 1.5;
 }
 .basic-title {
-  background: url('./../img/title-bg/title_all.png') center no-repeat;
+  background: url('../img/title-bg/title_all.png') center no-repeat;
   background-size: 100% 110%;
   @include media(desktop) {
     // background-size: contain;
@@ -109,7 +109,7 @@ body {
 }
 @media (min-resolution: 192dpi) {
   .basic-title {
-    background: url('./../img/title-bg/title_all@2x.png') center no-repeat;
+    background: url('../img/title-bg/title_all@2x.png') center no-repeat;
     background-size: contain;
   }
 }

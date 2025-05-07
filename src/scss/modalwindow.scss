@@ -29,13 +29,22 @@ body .modal-open {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+
   padding: 12px 0px 24px;
-  position: absolute;
-  top: 0;
-  right: 0;
+
+  padding-bottom: 24px;
+
   background: #fcfcfc;
   transform: scale(0.9);
   transition: transform 250ms ease;
+}
+.modal .container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: inherit;
 }
 .modal-header {
   display: flex;
@@ -68,6 +77,7 @@ body .modal-open {
 .confidens {
   display: flex;
   flex-direction: column;
+
   gap: 8px;
   font-size: 14px;
   line-height: 1.5;

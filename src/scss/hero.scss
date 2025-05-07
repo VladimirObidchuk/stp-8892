@@ -1,8 +1,8 @@
 .hero {
   background-image: url('../img/hero/mob-bg-hero.png');
   background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: 320px;
+  background-position: 50% 83%;
+  background-size: 320px 82%;
   padding-top: 57px;
 
   @include media(desktop) {
@@ -24,7 +24,7 @@
   width: 130px;
   height: 128px;
   right: 0;
-  bottom: 0;
+  bottom: 11px;
   position: absolute;
   @include media(desktop) {
     width: 358px;

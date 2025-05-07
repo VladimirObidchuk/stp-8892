@@ -1,6 +1,7 @@
 const openModalBtn = document.querySelector('[data-modal-open]');
 const closeModalBtn = document.querySelector('[data-modal-close]');
 const modal = document.querySelector('[data-modal]');
+const dataLink = document.querySelectorAll('[data-link]');
 
 if (openModalBtn && closeModalBtn && modal) {
   openModalBtn.addEventListener('click', openModal);

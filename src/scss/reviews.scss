@@ -1,6 +1,6 @@
 .reviews {
   background: url('../img/reviews/bg-reviews-mob.png') center no-repeat;
-  background-size: 100% 60%;
+  background-size: 100% 70%;
   background-position: 0 55px;
   @include media(desktop) {
     background: url('../img/reviews/bg-reviews-desc.png') center no-repeat;
@@ -106,7 +106,7 @@
   top: 90%;
 }
 .reviews-container {
-  padding: 54px 0 31px;
+  padding: 20px 0 38px;
 }
 #reviews-swiper .swiper-button-prev {
   left: 35%;

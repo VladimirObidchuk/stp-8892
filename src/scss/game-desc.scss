@@ -14,8 +14,8 @@
 @media (min-resolution: 192dpi) {
   .game-desc {
     background: url('../img/desc/bg-desc-mobile@2x.png') center no-repeat;
-    background-size: 100% 82%;
-    background-position: 0 50px;
+    background-size: 320px 84%;
+    background-position: 0 80px;
     @include media(desktop) {
       background: url('../img/desc/bg-desc@2x.webp') center no-repeat;
       background-position: 50% 0;

@@ -29,7 +29,7 @@
   @include media(desktop) {
     width: 358px;
     height: 353px;
-    right: 40px;
+    right: 15px;
     bottom: 0;
   }
 }
@@ -37,8 +37,9 @@
   .hero {
     background-image: url('./../img/hero/bg-hero@2x.webp') center;
     background-repeat: no-repeat;
-    background-position: bottom right, center;
-    background-size: 128px, cover;
+    background-position: 50% 83%;
+    background-size: 320px 82%;
+    padding-top: 57px;
 
     @include media(desktop) {
       background-repeat: no-repeat;

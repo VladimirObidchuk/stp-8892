@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   padding: 0 16px;
   @include media(desktop) {
-    min-width: 1200px;
+    min-width: 1185px;
     padding: 0 36px;
   }
 }
@@ -99,17 +99,15 @@ body {
 .basic-title {
   background: url('../img/title-bg/title_all.png') center no-repeat;
   background-size: 100% 110%;
-  @include media(desktop) {
-    // background-size: contain;
-  }
-  //   margin-bottom: 24px;
+
   @include media(desktop) {
     line-height: 1;
+    background-size: contain;
   }
 }
 @media (min-resolution: 192dpi) {
   .basic-title {
     background: url('../img/title-bg/title_all@2x.png') center no-repeat;
-    background-size: contain;
+    background-size: 100% 110%;
   }
 }

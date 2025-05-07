@@ -1,7 +1,6 @@
 const openModalBtn = document.querySelector('[data-modal-open]');
 const closeModalBtn = document.querySelector('[data-modal-close]');
 const modal = document.querySelector('[data-modal]');
-const dataLink = document.querySelectorAll('[data-link]');
 
 if (openModalBtn && closeModalBtn && modal) {
   openModalBtn.addEventListener('click', openModal);
@@ -34,6 +33,23 @@ function handleClickOutside(event) {
   }
 }
 
-document.querySelectorAll('[data-modal-link]').forEach(link => {
-  link.addEventListener('click', () => closeModal(modal));
+document.querySelectorAll('[data-link][href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerOffset = 50;
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+    if (modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
 });

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
 
-    if (scrollPosition > documentHeight * 0.2 - windowHeight * 0.2) {
+    if (scrollPosition > documentHeight * 0.3 - windowHeight * 0.3) {
       scrollToTopBtn.style.display = 'block';
     } else {
       scrollToTopBtn.style.display = 'none';

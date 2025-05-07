@@ -9,7 +9,7 @@
   border: none;
   border-radius: 100%;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
   transform: rotate(270deg);
   &:active {
     background-color: $_btn_active_color;

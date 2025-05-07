@@ -4,9 +4,9 @@
   bottom: 0;
   z-index: 1000;
   background-color: $_bg_accept_cookies;
-  padding: 12px 0px;
+
   @include media(desktop) {
-    padding: 0px;
+    padding: 32px 0 50px;
   }
   visibility: hidden;
   pointer-events: none;
@@ -19,7 +19,7 @@
   }
   .img-left-side {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 31px;
     width: 54px;
     height: 54px;
@@ -30,11 +30,10 @@
     }
   }
   .cookies-right-side {
-    padding-top: 23px;
+    padding: 35px 0 27px;
 
     @include media(desktop) {
-      padding-top: 32px;
-      padding-left: 14px;
+      padding: 0;
     }
   }
   .cookies-title-side {
@@ -85,6 +84,7 @@
   flex-direction: column;
   align-items: flex-end;
   @include media(desktop) {
+    gap: 14px;
     flex-direction: row;
   }
 }
@@ -93,8 +93,6 @@
   font-family: $_font_pop;
   font-weight: 600;
   font-size: 16px;
-
-  /* line-height: 20px; */
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
@@ -125,13 +123,13 @@
 }
 .btn-decline {
   padding: 10px 22px;
-  margin-bottom: 27px;
   background-color: transparent;
   &:active {
     border: 1px solid $_btn_play_border_active_color;
     box-shadow: 0 2px 0 0 $_btn_play_border_active_color;
   }
   @include media(desktop) {
+    margin-bottom: 0;
     &:hover {
       border: 1px solid $_btn_play_border_color;
       box-shadow: 0 2px 0 0 $_btn_play_border_color;

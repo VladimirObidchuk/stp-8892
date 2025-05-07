@@ -39,7 +39,7 @@
     <script type="module" crossorigin src="/stp-8892/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-8892/assets/vendor-28cdcbf5.js">
     <link rel="stylesheet" href="/stp-8892/assets/vendor-4d2afcc3.css">
-    <link rel="stylesheet" href="/stp-8892/assets/styles-959e682b.css">
+    <link rel="stylesheet" href="/stp-8892/assets/styles-a608b5cc.css">
   </head>
 
   <body>
@@ -88,20 +88,20 @@
         <img class="nav-logo-img" src="/stp-8892/assets/logo-0a66b568.png" alt="Lost Ville logo" />
       </a>
       <ul class="nav-list">
-        <li class="nav-item">
+        <li class="nav-item" data-link>
           <a class="nav-link" href="../index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#game-desc">Game Description</a>
+        <li class="nav-item" data-link>
+          <a class="nav-link" href="#game-desc" data-link>Game Description</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">Gallery</a>
+        <li class="nav-item" data-link>
+          <a class="nav-link" href="#gallery" data-link>Gallery</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
+        <li class="nav-item" data-link>
+          <a class="nav-link" href="#faq" data-link>FAQ</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
+        <li class="nav-item" data-link>
+          <a class="nav-link" href="#reviews" data-link>Reviews</a>
         </li>
       </ul>
       <button type="button" class="burger-btn" data-modal-open>
@@ -131,50 +131,54 @@
               </button>
             </div>
             <ul class="mobile-list">
-              <li class="mobile-item" data-modal-link>
+              <li class="mobile-item">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHgBjVK/axRBFP7e7N7urRzmFFEbYdiAYIhwCrGyUAtJpaksrMQgiE0MItjlCgtTidiL2FgG/4LT9pq0NkKwE4vjYi7Zu915z5mdy8bLneLAY2bfvO/He7OEv6yDttYqRwdMYJabyebOzqw6NSu591y3KEOHR6R5BC1D6vQea/1fBINnekUxdXhIOrgwLypdgCMJmbZ3V+dX/kmwv56ukVFbMqJmeKmF2rXrFF25inDhMlxOcmz176cbf2KCSvlJuiGMV7YI0dISaouLgJgywvNnbGWI/NsPcEE3Xlw8hc2vvS8OR72nulnL1GsRPKAwQv32LQTnzlogewI243Mhxfef9OtTF7xvc4beB1m+TnuP0m021FKNBpK7y1CNREoA2/FXBEbKb3vm3QH6H7sw/QNn4LMyIzRp7jSSOw58wgM92BP5ICsp9tLWRJi71xJ1sg5boMnRSPel+H5tI9bOuHeZciHehc8xaPkdhX6EbC/FFR+C8eHtG8oGQzGFHWoU0+raQzpyJH63yxOUSpXdMgiZRAlRkVsjRTalPkkwNXGGA3MhEgR2N3JM3cwi4HJIXokRxyLG3ga2tigwQV6SuLaPEVBlbezA9e8iCOkIfNhG+TLVr8ztCjxWiupAbF8qTsp90roLRW2H/A1mWE/SdhD4HQAAAABJRU5ErkJggg=="
                   alt="Home Page"
                   width="20"
                   height="20"
                 />
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../index.html" data-modal-link
+                  >Home</a
+                >
               </li>
-              <li class="mobile-item" data-modal-link>
+              <li class="mobile-item">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIxSURBVHgBdVNLbhNBEH01HsdOQhwbIVgY48iwQwrOAnEPthyANRIHAIkLsGZBjsAROAIoSIgVIMXAgkUkhPyZ6Spef8ZjJs5Iz92urnrz6nWN2PnTByjzUximgBlX8QthUO65gxpj3KmP4ysKeywnbz5g48lRtN4xY8yi+DiLqyeLhRsk4eyIeEuc/E+kNk4FqRjVXoKqqNAaOVM0HipSWSdUbenGf7XIrKjz1HCZSHniogdudo7V2Uc4JjqXoOpX6R1PsTcaWmpTrlbE4qw3QOvoHoT7FmGEJnT6A6PJ6SKwRVGZTCQk72BnPLEoX6rbq2+w9D1LZXqDyGmdWJuMIMdIporacL9WBm5XFExd/pzhz+ez5I9K9Cp4hBv3j+VwOEpGb/PIZyUD2wd97I4mwZPKH+OPss29w+sI6ut5airy0qMfWd7F/u1J7UtsLU43FWJVcOcQ2r1MlPquZ6l6K+POApFHIHAIua7E7Hlu3bZhd8fQzc2iIkQFf3/9kN9fPqXZUWTtrtx9+IgEZVThSQKZQ+reT4q/A6luzSdKZ/8aesM7zGMiC/N2GyjmsR0Lzq+V0VJRi9+zX6loFd/iCzNgcPNWVUjwSsuFpPO6PSL4royQyYvlZC8ueNAPfoQ3Kmo/krHNPWGxtTQ59i3Dav6CZAgol8TC1v+LpcT4RqwkXJEmQSSocjjN5Mn713ALT/Y9JBWLjeK5BY98zK1oSBE/Hz8NNJpkF2rZs4NX+vIf+2QSJ+hghvcAAAAASUVORK5CYII="
                   alt="Game Description"
                   width="20"
                   height="20"
                 />
-                <a class="nav-link" href="#game-desc">Game Description</a>
+                <a class="nav-link" href="#game-desc" data-link
+                  >Game Description</a
+                >
               </li>
-              <li class="mobile-item" data-modal-link>
+              <li class="mobile-item">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHXSURBVHgBTZG9btRAFIXPHY/XolmWB0CiZ3+0hIAihHgAWkokGloEFNQgJGpCQ0UROjp4BRQlRRIpiZIiTxFtuvXYnptzb7xJLI88nplzv3PPCPgM/+pnAT4ocDcopGgyYlIt6yxlA347KZOiXHaLstat/W/Dj0LRd2rfU8gXSpHEhocoiL0gpgwKOFiQ69D8VYb/9JzTkZFCp0qSC+OKyv8iZaPDioRsHvUiSMa9Ivf2aqNlF/l/m+XtWsD/d5W8fholZKUrGwTFVs2SVytbWk29qAG/ileziEUKeLleQWmSHakxgwfQ9+E9URCT9lTF750G50vFn+0lRJiDZiNC7v9Kar5DS/+douiMqm6TblxsvcPDYxASSOa+pUW4BqZZZB5sGQYF8weRRRSnZ40DzKbwMZG90dISNm20YLRO5cW4xPPpAH7HdwS7h4kkvy1fM8tGVDGrFJAozyYDbIwHYItWGY9nFWgCe0e197Z6nBioNfHGtMSTyY3Iw+d8zrWObRwc1z2ZQqZ3wR5H67MBHk2qGxE38635dGxk4PgkmW4RRGVzjf3MTNTheqTVXK/mvC2MH1aYsABBW879eaKbtPWGZ0ZWPvcUo+W+J73KZcG9H5/m8uUS6DwyfUgTyvEAAAAASUVORK5CYII="
                   alt="Gallery"
                   width="20"
                   height="20"
                 />
-                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#gallery" data-link>Gallery</a>
               </li>
-              <li class="mobile-item" data-modal-link>
+              <li class="mobile-item">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKbSURBVHgBpZPPS1RRFMfPOffNm5/gaEE/IEiiNiFIC4MgMgjStYLRJhchtIh5EuHSoU3QZqRdEAzaqh+g/QHBWBtbKdSiXRaRJuI8f+TozLv3ds59Y5M0rbpwuIfLvZ/7Pd9zL8IfI19u9HsIBTCmHw10YENvoqEK1fX0ynh2Dv4x8CDpmmmU0EIBtUHSvGCsxYhzw3lkJaZW7ufG20HIAZ41JsnaAI0FAcgsAFZjUXOuGWhs4dTDrXJbSL5c7+XbirKZ5CDPk30EH2758O5mEvuOo0BYkUXQdrTn7ufRvyBKPNCsWW40aIfOIJzMAFyeqcODt3V4PJAEMk6N26NJlUcGK6VDEJbc25TMdRuc/aRh4k0E2zUDZzsJNmrxYQni2EulwVoIxoYXSi2INr3OBxfGmbi9a+DeJR8unCAYe1FzF1ATZEkxhHNQheDGYr+DMGDZdYIBrCo2lWPovAd3Xu7Caqh/lyKz2m/wJrLEVpGHhVhJpOddJ0RJFG+UGHiyE+emtSbtTv+sQUIRElOUoliJ1TAbt9IcOjB5PQ3XziVceaLwwNyj1SokEx54JK8DO5qe2Ly00JWiW5ClrxF85Gga7srp+rEGx3e2wE8o8DwFiLApEI8sFrmclorm/Hyh5swm5xN/ifUN6F5fg1wmFStRBGzzvIOIXJYaWm2WMuHOUnp7L9jq7ADDj5nqEWTZg2Orq3Ckvg+5bApSvg++50kpltlTDvJ9Itd9uljNLxc7Q1kYGZxH++VbQbooH8vzyB1K5jKWFaDPZYipwDYqgCucVLDdX7g9/L6kEAPeZxUnIt1TSroBhw5YqD6a7umidpCnry6Op5OJq9l04nUm5YdJPyEehAyYs2ACfiIVKYeJIfzvCEYX8zL/Al/SV12DAN2WAAAAAElFTkSuQmCC"
                   alt="FAQ"
                   width="20"
                   height="20"
                 />
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#faq" data-link>FAQ</a>
               </li>
-              <li class="mobile-item" data-modal-link>
+              <li class="mobile-item">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgBVVLBShxBEH2vezwEk5lNEJKwC7sQyM0vyDkfEAK5JuSSHPMFiUdvUbwq+gV616MXPXgSXG8uCh5UcEXFxZnpsqp7BnWgp7u6ql7Ve10crC9/R+B/AK8FEAJEOqQzKRCzMILnnEPt5tTf0QT1EfHjk7MFp7sBgixkQukDrU/A1ggJXfEZ1GVV9aLIGGMaEDsr4N/+Ca4qj8WTLhUjwjOkoAy1l4hmDjrpTk34+eUlclZYPXqP63LK2qOFB62T4d7F4K8z5/j59pQ5avSqCVAB2x/2MLyextZ4BivjXhQhQ+miJMNxjrxzjK6bQCbaWw3kdUCvvMPOxRth8LQMh9IrmpeDq1f4dTgL3oa45Eap6vp9MIvhbcFgrSt4FhNCIp4brAXqhkr7rAW5xkntwftEXjnYjQkgLDRy96yDpdOPKkTg/Lt9TItSrSPPqCD78xvBBKfpbCiG7qmKUJy9gWsEN3gtnrH0aRQaZeHio1lBk15UrYQedbV3aFQSayxNAVvbdhcnwH4tByMtRDt0kY+gsdkEpzvdR5qQjb99+dQpihfP54nt0D6OlxprHPzZ/AHx/7S/QVv2aaVHO+aMHgBvDNrcPFQl7wAAAABJRU5ErkJggg=="
                   alt="Reviews"
                   width="20"
                   height="20"
                 />
-                <a class="nav-link" href="#reviews">Reviews</a>
+                <a class="nav-link" href="#reviews" data-link>Reviews</a>
               </li>
             </ul>
 

@@ -66,12 +66,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: url('../img/reviews/group.png') center no-repeat;
+  background: url('../img/reviews/rv-title.png') center no-repeat;
   background-size: contain;
 }
 @media (min-resolution: 192dpi) {
   .reviews-list {
-    background: url('../img/reviews/group@2x.png') center no-repeat;
+    background: url('../img/reviews/rv-title@2x.png') center no-repeat;
     background-size: contain;
   }
 }

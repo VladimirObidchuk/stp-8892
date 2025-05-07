@@ -40,6 +40,7 @@
 }
 #faq-accordion {
   width: 288px;
+
   @include media(desktop) {
     width: 836px;
   }
@@ -50,8 +51,11 @@
 #faq-accordion #ac-3 {
   border: none;
 }
-#faq-accordion #ac-0 .ac-header {
-  //   width: 286px;
+#faq-accordion #ac-0,
+#faq-accordion #ac-1,
+#faq-accordion #ac-2,
+#faq-accordion #ac-3 {
+  background-color: #e4eef8;
 }
 
 #faq-accordion #ac-0 .ac-header #ac-trigger-0,
@@ -62,6 +66,7 @@
   border-radius: 20px;
   background-color: $_main_bg_card_color;
   padding: 19px 48px 19px 16px;
+
   @include media(desktop) {
     padding: 17px 16px;
   }
